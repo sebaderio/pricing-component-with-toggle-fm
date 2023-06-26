@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Pricing component with toggle | Frontend Mentor</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <h1 class="pricing-title">Our Pricing</h1>
+
+    <div class="billing-period">
+      <p class="period-name">Annually</p>
+      <!-- TODO find ready to use toggle -->
+      <div class="period-toggle">
+        <input id="period-toggle" type="checkbox" class="period-toggle-input">
+        <label for="period-toggle-input"></label>
+      </div>
+      <p class="period-name">Monthly</p>
+    </div>
+
+    <div class="pricing">
+
+      <div id="price-basic" class="price-component">
+        <p class="price-title opacity-600">Basic</p>
+        <div class="price">
+          <p class="price-dollar">&dollar;</p>
+          <p class="price-amount">199.99</p>
+        </div>
+        <div class="price-feature line-top">
+          <p class="opacity-600">500 GB Storage</p>
+        </div>
+        <div class="price-feature line-top">
+          <p class="opacity-600">2 Users Allowed</p>
+        </div>
+        <div class="price-feature line-top line-bottom">
+          <p class="opacity-600">Send up to 3 GB</p>
+        </div>
+        <button type="button" class="btn price-btn">LEARN MORE</button>
+      </div>
+
+      <div id="price-professional" class="price-component price-component-highlight">
+        <p class="price-title">Professional</p>
+        <div class="price">
+          <p class="price-dollar">&dollar;</p>
+          <p class="price-amount">249.99</p>
+        </div>
+        <div class="price-feature line-top">
+          <p>1 TB Storage</p>
+        </div>
+        <div class="price-feature line-top">
+          <p>5 Users Allowed</p>
+        </div>
+        <div class="price-feature line-top line-bottom">
+          <p>Send up to 10 GB</p>
+        </div>
+        <button type="button" class="btn price-btn">LEARN MORE</button>
+      </div>
+
+      <div id="price-master" class="price-component">
+        <p class="price-title opacity-600">Master</p>
+        <div class="price">
+          <p class="price-dollar">&dollar;</p>
+          <p class="price-amount">399.99</p>
+        </div>
+        <div class="price-feature line-top">
+          <p class="opacity-600">2 TB Storage</p>
+        </div>
+        <div class="price-feature line-top">
+          <p class="opacity-600">10 Users Allowed</p>
+        </div>
+        <div class="price-feature line-top line-bottom">
+          <p class="opacity-600">Send up to 20 GB</p>
+        </div>
+        <button type="button" class="btn price-btn">LEARN MORE</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
